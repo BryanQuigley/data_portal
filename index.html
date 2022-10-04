@@ -1,25 +1,14 @@
 ---
-title: mySociety datasets and APIs
+title: Welcome
 layout: default
 ---
 
-<h1 class="homepage-title mobile-hide">Find mySociety datasets and data services</h1>
+<h1 class="homepage-title mobile-hide">Your source for open data in the Philadelphia region</h1>
 <div class="homepage-description">
   <p>
-    mySociety services and research rely on and produce open datasets. We often made components or the results of mySociety services available through <a href="/datasets/?category=apis">APIs</a> or as open data to download.
-    This site brings all our data together.</p>
-  <p>If you end up doing something interesting with the data, please <a href="mailto:hello@mysociety.org">let us know!</a></p>
-
-<p>
-Main categories: 
-{% assign featured_categories = site.data.categories | where: 'featured', 'true' %}
-
-{% for category in featured_categories %}
-    {% capture logo_alt %}{{ category.name }}{% if category.logo_credit and category.logo_credit != empty %} logo by {{ category.logo_credit }}{% endif %}{% endcapture %}
-    <a href="{{ site.baseurl }}/categories/{{ category.name | slugify }}/"  title="{{ logo_alt }}">{{ category.name }}</a>{% unless forloop.last %}, {% endunless %} 
-
-{% endfor %}
-</p>
+    OpenDataPhilly is a catalog of open data in the Philadelphia region.
+    In addition to being the official open data repository for the City, it includes data sets from many organizations in the region.
+  </p>
 </div>
 
 <h3>Browse by Category</h3>
